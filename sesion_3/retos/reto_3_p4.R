@@ -48,11 +48,31 @@ plot(medias_ndvi)
 
 
 
+#MODO B
 
+library(raster)
 
+horas <- c("12", "13", "14", "15")
 
+medias_ndvi <-c()
 
+for (j in horas){
+    # Se leen las distintas imágenes de j 
+    imagenes_hora <- list.files(path="./sesion_3/retos/ndvi", full.names = TRUE, recursive=TRUE,
+                                pattern=paste("_", j , "..\\.jpg\\.asc$", sep=""))
+    # Se combinan todas las imagenes de la misma hora 
+    todas_hora <- stack(imagenes_hora) 
+    
+    # Hacemos la media de las 3 imágenes (:00,:20,:40) para obtener la media por pixel
+    media_pixel_hora <- mean(todas_hora[])
+    
+    # Hacemos la media de todos los pixeles de la imagen anterior, con la misma hora
+    media_hora <- mean(media_pixel_hora)
+    
+    medias_ndvi <- rbind(media_hora,medias_ndvi)
+}
 
+    plot(medias_ndvi)
 
 
 
