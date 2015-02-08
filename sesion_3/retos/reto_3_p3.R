@@ -1,25 +1,23 @@
 #Algoritmo que haga la media de 10 temperaturas indicadas por el usuario.
 
-#Forma 1. Más evidente
+#Forma 1. Simple
 a <- scan(n=10)
 mean(a)
 print(mean)
 
-#Forma 2. Creando la función
-c <- scan(n=10)
-media -< function(c){
-  sum(c)/length(c)} 
 
+##Forma 2. Con bucle
+suma <- 0
+for (b in suma) {
+  temperaturas<-scan(n=10)
+  total <- suma + temperaturas
+  
+}
 
-
+media <- mean(total)
 print(media)
 
-
-suma <- 0 
-suma <- suma + valor 
-
-
-### Ejemplo funcion media 
+### Ejemplo funcion media. Para preguntar. No evaluar
 
 mimedia <- function(x){ 
             sum(x)/length(x) }
