@@ -125,12 +125,20 @@ for (j in pixeles){
   tabla <- rbind(tabla,tabla_aux)
 }
 
+<<<<<<< HEAD
 # Selecciono las columnas que me interesan: "scd", "lat" y "lng" para pintarlas
+=======
+# Selecciono las columnas que me interesan: "ndvi_i", "lat" y "lng" para pintarlas
+>>>>>>> 1f06e41ba5490941966e5c479c6c4cdae921b767
 #en el mapa final.
 datospintar <- datosnieve[,c(2,10:11)]
 coordenadas<- unique(datospintar)
 
+<<<<<<< HEAD
 #Unimos los datos de la tabla y las coordenadas por el campo nie_malla_modi-id con el
+=======
+#Unimos los datos de la tabla y las coordenadas por el campo iv_malla_modi-id con el
+>>>>>>> 1f06e41ba5490941966e5c479c6c4cdae921b767
 #mismo nombre que le dais en el script a la tabla que se debe pintar (tendencias)
 tendencias <- join(tabla, coordenadas, "nie_malla_modi_id")
 
