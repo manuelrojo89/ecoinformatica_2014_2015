@@ -13,7 +13,7 @@
 #sólo se pedía el de nieve, pero quería asegurarme de saber hacerlo bien y haber
 #entendido correctamente el proceso
 
-#PARA NDVI
+#PARA EL NDVI
 
 #Vamos a calcular tendencias, cargamos kendall
 library('Kendall')
